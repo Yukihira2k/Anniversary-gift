@@ -97,7 +97,7 @@ export function MasonryGridGallery() {
           </div>
           <div>
             <img
-              className="h-[100%] max-w-full rounded-lg object-cover object-center"
+              className="h-auto max-w-full rounded-lg object-cover object-center"
               src={mid2}
               alt="gallery-photo"
             />
