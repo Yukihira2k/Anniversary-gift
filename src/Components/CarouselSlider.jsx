@@ -1,21 +1,23 @@
 import { Carousel } from "@material-tailwind/react";
-
+import Image1 from "../assets/image1.jpg"
+import Image2 from "../assets/image2.jpg"
+import Image3 from "../assets/image3.jpg"
 
 const images= [
   {
     id:1,
-    src:"https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+    src:Image1,
     alt:"image 1",
 
   },
   {
     id:2,
-    src:"https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",    alt:"image 2",
+    src:Image2,    alt:"image 2",
 
   },
   {
     id:3,
-    src:"https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",    alt:"image 3",
+    src:Image3,   alt:"image 3",
 
   },
 ]
@@ -25,8 +27,9 @@ const CarouselSlider = () => {
   return (
 
 
-    <div className="container  w-auto h-auto m-auto mt-10 lg:w-1/2 ">
-      <div className="flex justify-center items-center">
+    <div className="container  w-auto h-auto m-auto mt-10 lg:w-1/2 border-t-2 pt-10 mb-10">
+      <div className="flex-col justify-center items-center text-center m-10">
+        <h1 className="text-5xl pb-10">Where it all started</h1>
       <Carousel
       className="rounded-xl h-[500px]"
       navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -45,7 +48,7 @@ const CarouselSlider = () => {
     >
 
       {images.map(({id,src,alt})=>{
-        return <img key={id} src={src} alt={alt}   className="h-full w-full object-cover "/>
+        return <img key={id} src={src} alt={alt}   className="h-full w-full  object-cover"/>
       })}
     </Carousel>
   </div>

@@ -15,7 +15,7 @@ export function LongDialog() {
  
   return (
     <>
-      <Button onClick={handleOpen} className="bg-red-400">Letter for you Love!</Button>
+      <Button onClick={handleOpen} className="bg-red-400">Letter for Love!</Button>
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>No words can explain how much I love you.</DialogHeader>
         <DialogBody className="h-[42rem] overflow-scroll">

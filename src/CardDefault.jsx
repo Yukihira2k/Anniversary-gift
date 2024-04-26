@@ -1,3 +1,4 @@
+import { ButtonWithIcon } from "./Components/ButtonWithIcon";
 import { LongDialog } from "./Components/LongDialog";
 import cardImage from "./assets/cardImage.jpg"
 import {
@@ -26,8 +27,9 @@ import {
             I prepared a letter for you. Enjoy reading love love!!!
           </Typography>
         </CardBody>
-        <CardFooter className="pt-0">
+        <CardFooter className="pt-0 flex gap-4 ">
           <LongDialog/>
+          <ButtonWithIcon/>
         </CardFooter>
       </Card>
     );
